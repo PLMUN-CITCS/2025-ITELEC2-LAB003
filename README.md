@@ -74,4 +74,52 @@ cd <git_cloned_folder>
 ```
 
 ### **Step 3: Complete the Assignment**
-Details of Activity Here
+
+Problem # 01: Case Sensitivity in Variables
+1. Open and edit `problem_01.py`, and modify the output statement on Line 15 to reflect this output:
+```bash
+Which variable will return the value 8?
+number or Number?
+number = 5 and Number = 8
+The answer is: Number
+```
+
+2. Open and edit `problem_02.py`, and modify the output statements on Lines 10, 11, 12, 13 and 14 to reflect this output:
+```bash
+The sum of num1 and num2 is 13. I used the mathematical expression: num1 + num2or num2 + num1.
+The difference of num3 and num2 is num1 which has a value of 5. I printed out the value of num1.
+The product of num2 and num1 is 40. I used the mathematical expression: num2 * num1 or num1 * num2.
+The num2 divided by num1 is 1.6. I used the mathematical expression: num2 / num1.
+The remainder of num2 divided by num1 is 3. I used the mathematical expression: num2 % num1.
+```
+### **Step 4: Push Changes to GitHub**
+Once you've completed your changes, follow these steps to upload your work to your GitHub repository.
+
+1. Check the status of your changes:
+Open the terminal and run:
+
+```bash
+git status
+```
+This command shows any modified or new files.
+
+2. Stage the changes:
+Add all modified files to staging:
+
+```bash
+git add .
+```
+
+3. Commit your changes:
+Write a meaningful commit message:
+
+```bash
+git commit -m "Submitting Python Session 03 - Exercise 01"
+```
+
+4. Push your changes to GitHub:
+Upload your changes to your remote repository:
+
+```bash
+git push origin main
+```
