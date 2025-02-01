@@ -46,4 +46,4 @@ jobs:
         SYNTAX-CHECK_RESULTS: "${{steps.syntax-check.outputs.result}}"
         logic-CHECK_RESULTS: "${{steps.logic-check.outputs.result}}"
       with:
-        runners: file-existence-check, syntax-check, logic-check
+        runners: file-existence-check,syntax-check,logic-check
