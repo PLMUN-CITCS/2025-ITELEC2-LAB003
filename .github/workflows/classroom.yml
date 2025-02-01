@@ -38,7 +38,7 @@ jobs:
         test-name: Run Check - exercise_01.py
         command: |
             #!/bin/bash
-            if [[ "$(python exercise_01.py)" == "$(cat tests/output.txt)" ]]; then
+            if diff <(python exercise_01.py) tests/output.txt > /dev/null; then
                 echo "Success"
                 exit 0
             else
