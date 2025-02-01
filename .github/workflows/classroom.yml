@@ -36,7 +36,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Run Check - exercise_01.py
-        command: "$(python exercise_01.py) == $(cat tests/output.txt)"
+        command: "$(python exercise_01.py) === $(cat tests/output.txt)"
         timeout: 10
         max-score: 60
     - name: Autograding Reporter
