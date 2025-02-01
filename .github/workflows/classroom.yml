@@ -37,7 +37,7 @@ jobs:
       with:
         test-name: Run Check - exercise_01.py
         command: |
-            if $(python exercise_01.py) == $(cat tests/output.txt)
+            if $(python exercise_01.py) == $(cat tests/output.txt) then
                 echo "Success"
             else
                 echo "Failed"
