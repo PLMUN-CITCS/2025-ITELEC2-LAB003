@@ -36,7 +36,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Run Check - exercise_01.py
-        setup: "chmod +x ./run_tests.sh"
+        setup-command: "chmod +x ./run_tests.sh"
         command: "./run_tests.sh"
         timeout: 10
         max-score: 60
