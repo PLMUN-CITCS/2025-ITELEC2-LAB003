@@ -44,6 +44,6 @@ jobs:
       env:
         FILE-EXISTENCE-CHECK_RESULTS: "${{steps.file-existence-check.outputs.result}}"
         SYNTAX-CHECK_RESULTS: "${{steps.syntax-check.outputs.result}}"
-        logic-CHECK_RESULTS: "${{steps.logic-check.outputs.result}}"
+        LOGIC-CHECK_RESULTS: "${{steps.logic-check.outputs.result}}"
       with:
         runners: file-existence-check,syntax-check,logic-check
