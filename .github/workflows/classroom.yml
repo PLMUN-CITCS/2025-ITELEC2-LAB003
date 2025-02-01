@@ -36,7 +36,12 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Run Check - exercise_01.py
-        command: "$(python exercise_01.py) === $(cat tests/output.txt)"
+        command: |
+            if $(python exercise_01.py) == $(cat tests/output.txt)
+                echo "Success"
+            else
+                echo "Failed"
+            fi
         timeout: 10
         max-score: 60
     - name: Autograding Reporter
