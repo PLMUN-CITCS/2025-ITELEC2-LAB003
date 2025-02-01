@@ -88,6 +88,8 @@ Only perform this if this is the first time you will setup your Git Environment
    Integer (total_count): 20
    Decimal: 3.14
    Text: Hello, Python!
+   Boolean: True
+   None Value: None
    ```
    **Notable Observations (to be discussed after completing the exercise):**
    - Python is case-sensitive. count and total_count are treated as distinct variables.
