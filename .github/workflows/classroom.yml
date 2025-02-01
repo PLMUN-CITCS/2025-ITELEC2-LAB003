@@ -36,15 +36,8 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Run Check - exercise_01.py
-        command: |
-            #!/bin/bash
-            if diff <(python exercise_01.py) tests/output.txt > /dev/null; then
-                echo "Success"
-                exit 0
-            else
-                echo "Failed"
-                exit 1
-            fi
+        setup: "chmod +x ./run_tests.sh"
+        command: "./run_tests.sh"
         timeout: 10
         max-score: 60
     - name: Autograding Reporter
