@@ -1,4 +1,4 @@
-# 2025-ITELEC2-WK02S01E01
+# 2025-ITELEC2-LAB003
 Week 02 - Python Variables, Operators and I/O Statements
 
 Laboratory # 03 - Guided Coding Exercise: Variables, Literals, and Case-Sensitivity in Python (with Naming Conventions)
